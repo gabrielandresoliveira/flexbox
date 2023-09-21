@@ -1,0 +1,38 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: initial;
+    font-weight: 400;
+    text-align: initial;
+    
+}
+
+
+
+
+
+
+
+
+.conteiner{
+    height:200px ;
+    width: 700px;
+    background-color: rgb(187, 187, 187);
+    border: 1px solid #000000;
+    display: flex;
+    padding: 50px;
+}
+
+
+.contido{
+    width: 100px;
+    height: 100px;
+    background-color: aqua;
+    border: 1px solid #000;
+    font-size: xx-large;
+    text-align:center;
+    padding-top: 30px;
+    font-family: Arial, Helvetica, sans-serif; 
+}
+
