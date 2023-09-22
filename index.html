@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,18 +8,58 @@
     <title>Flexbox - Documentação</title>
     <link rel="stylesheet" href="./style.css">
 </head>
+
 <body>
-    
+
     <h1>Flexbox</h1>
     <h2>Documentação</h2>
     <h3>Display: flex</h3>
     <p class="Descrição de propriedade">
-        A primeira propriedade que precisa ser declarada oara qye i Flexbox funcione!
+        A primeira propriedade que precisa ser declarada para que o Flexbox funcione!
     </p>
     <p class="Descrição de propriedade">
         Algumas propriedades como flex-direction, justify-content e align-content já vem com os valores padrão
     </p>
-    
+
+    <table>
+        <tr>
+            <th class="propriedade">Display</th>
+            <td class="Valor">Flex</td>
+        </tr>
+        <tr>
+            <td class="propriedade">flex-direction</td>
+            <td class="valor">valor</td>
+        </tr>
+        <tr>
+            <td class="propriedade">justify-content</td>
+            <td class="valor">valor</td>
+        </tr>
+        <tr>
+            <td class="propriedade">flex-start</td>
+            <td class="valor">valor</td>
+        </tr>
+    </table>
+
+    <p>
+        Exemplo
+    </p>
+    <div class="conteiner">
+        <div class="contido">1</div>
+        <div class="contido">2</div>
+        <div class="contido">3</div>
+    </div>
+    <pre class="codigo" style="background-color: black; color:aliceblue;"> <code><span>#Style.css</span>
+            
+    <span>.conteiner{</span>
+            <span>height:200px ;</span>
+            <span>width: 700px;</span>
+            <span>background-color: rgb(187, 187, 187);</span>
+            <span>border: 1px solid #000000;</span>
+            <span>display: flex;</span>
+    <span>}</span>
+    </code></pre>
+
+    <h1></h1>
     <table>
         <tr>
             <th class="propriedade">Propriedade</th>
@@ -37,20 +78,23 @@
             <td class="valor">valor</td>
         </tr>
     </table>
-    
+
     <p>
         Exemplo
     </p>
-    <div class="conteiner">
+    <div class="conteiner2">
         <div class="contido">1</div>
         <div class="contido">2</div>
         <div class="contido">3</div>
-        <div class="contido">4</div>
-        <div class="contido">5</div>
-        <div class="contido">6</div>
-        <div class="contido">7</div>
-        <div class="contido">Aplicação</div>
     </div>
-</body>
-</html>
-    
+
+    <pre class="codigo" style="background-color: black; color:aliceblue;"> <code><span>#Style.css</span>         
+    <span>.conteiner{</span>
+        <span>height:200px ;</span>
+        <span>width: 700px;</span>
+        <span>background-color: rgb(187, 187, 187);</span>
+        <span>border: 1px solid #000000;</span>
+        <span>display: flex;</span>
+        <span>flex-direction: column;</span>
+    <span>}</span>
+    </code></pre>
