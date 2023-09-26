@@ -5,7 +5,6 @@
     font-size: initial;
     font-weight: 400;
     text-align: initial;
-
 }
 
 h1 {
@@ -34,6 +33,42 @@ h1 {
     border: 1px solid #000000;
     display: flex;
     flex-direction: column;
+}
+
+.conteiner3 {
+    height: 200px;
+    width: 700px;
+    background-color: rgb(187, 187, 187);
+    border: 1px solid #000000;
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+.conteiner4 {
+    height: 200px;
+    width: 700px;
+    background-color: rgb(187, 187, 187);
+    border: 1px solid #000000;
+    display: flex;
+    flex-direction:row;
+}
+
+.conteiner5 {
+    height: 200px;
+    width: 700px;
+    background-color: rgb(187, 187, 187);
+    border: 1px solid #000000;
+    display: flex;
+    flex-direction:row-reverse;
+}
+
+.conteiner6 {
+    height: 200px;
+    width: 700px;
+    background-color: rgb(187, 187, 187);
+    border: 1px solid #000000;
+    display: flex;
+    flex-wrap: wrap;
 }
 
 .contido {
