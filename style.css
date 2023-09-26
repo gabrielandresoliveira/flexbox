@@ -12,6 +12,10 @@ h1 {
     text-align: center;
 }
 
+body{
+    margin: auto;
+    width: 80%;
+}
 
 
 
@@ -21,6 +25,7 @@ h1 {
 .conteiner {
     height: 200px;
     width: 700px;
+    margin: auto;
     background-color: rgb(187, 187, 187);
     border: 1px solid #000000;
     display: flex;
@@ -29,6 +34,7 @@ h1 {
 .conteiner2 {
     height: 200px;
     width: 700px;
+    margin: auto;
     background-color: rgb(187, 187, 187);
     border: 1px solid #000000;
     display: flex;
@@ -38,6 +44,7 @@ h1 {
 .conteiner3 {
     height: 200px;
     width: 700px;
+    margin: auto;
     background-color: rgb(187, 187, 187);
     border: 1px solid #000000;
     display: flex;
@@ -47,6 +54,7 @@ h1 {
 .conteiner4 {
     height: 200px;
     width: 700px;
+    margin: auto;
     background-color: rgb(187, 187, 187);
     border: 1px solid #000000;
     display: flex;
@@ -56,6 +64,7 @@ h1 {
 .conteiner5 {
     height: 200px;
     width: 700px;
+    margin: auto;
     background-color: rgb(187, 187, 187);
     border: 1px solid #000000;
     display: flex;
@@ -65,6 +74,7 @@ h1 {
 .conteiner6 {
     height: 200px;
     width: 700px;
+    margin: auto;
     background-color: rgb(187, 187, 187);
     border: 1px solid #000000;
     display: flex;
@@ -74,6 +84,7 @@ h1 {
 .contido {
     width: 100px;
     height: 100px;
+    margin: auto;
     background-color: rgb(255, 255, 255);
     border: 1px solid #000;
     font-size: xx-large;
@@ -85,4 +96,5 @@ h1 {
 
 .codigo {
     width: 700px;
+    margin: auto;
 }
