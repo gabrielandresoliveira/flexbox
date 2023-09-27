@@ -81,10 +81,90 @@ body{
     flex-wrap: wrap;
 }
 
+.conteiner7 {
+    height: 200px;
+    width: 700px;
+    margin: auto;
+    background-color: rgb(187, 187, 187);
+    border: 1px solid #000000;
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+.conteiner8 {
+    height: 200px;
+    width: 700px;
+    margin: auto;
+    background-color: rgb(187, 187, 187);
+    border: 1px solid #000000;
+    display: flex;
+    flex-flow: row wrap;
+}
+
+.conteiner9 {
+    height: 200px;
+    width: 700px;
+    margin: auto;
+    background-color: rgb(187, 187, 187);
+    border: 1px solid #000000;
+    display: flex;
+    justify-content: initial;
+}
+
+.conteiner10 {
+    height: 200px;
+    width: 700px;
+    margin: auto;
+    background-color: rgb(187, 187, 187);
+    border: 1px solid #000000;
+    display: flex;
+    justify-content: center;
+}
+
+.conteiner11 {
+    height: 200px;
+    width: 700px;
+    margin: auto;
+    background-color: rgb(187, 187, 187);
+    border: 1px solid #000000;
+    display: flex;
+    justify-content:flex-start;
+}
+
+.conteiner12 {
+    height: 200px;
+    width: 700px;
+    margin: auto;
+    background-color: rgb(187, 187, 187);
+    border: 1px solid #000000;
+    display: flex;
+    justify-content:flex-end;
+}
+
+.conteiner14 {
+    height: 200px;
+    width: 700px;
+    margin: auto;
+    background-color: rgb(187, 187, 187);
+    border: 1px solid #000000;
+    display: flex;
+    justify-content:space-between;
+}
+
+.conteiner13 {
+    height: 200px;
+    width: 700px;
+    margin: auto;
+    background-color: rgb(187, 187, 187);
+    border: 1px solid #000000;
+    display: flex;
+    justify-content:space-around;
+}
+
 .contido {
     width: 100px;
     height: 100px;
-    margin: auto;
+    /* margin: auto; */
     background-color: rgb(255, 255, 255);
     border: 1px solid #000;
     font-size: xx-large;
