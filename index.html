@@ -9,597 +9,891 @@
     <link rel="stylesheet" href="./style.css">
 </head>
 
-<body>
+<body class="body">
 
-    <h1>Flexbox</h1>
-    <h2>Documentação</h2>
-    <h3>Display: flex</h3>
-    <p class="Descrição de propriedade">
-        A primeira propriedade que precisa ser declarada para que o Flexbox funcione!
-    </p>
-    <p class="Descrição de propriedade">
-        Algumas propriedades como flex-direction, justify-content e align-content já vem com os valores padrão
-    </p>
+    <header>
+        <div class="header-content">
+            <a href="#Inicio">
+                <figure>
+                    <img class="post-capa" width="105" height="100"
+                        src="https://dracula-theme.gallerycdn.vsassets.io/extensions/dracula-theme/theme-dracula/2.22.4/1623770247403/Microsoft.VisualStudio.Services.Icons.Default">
+                </figure>
+            </a>
 
-    <table>
-        <tr>
-            <th class="propriedade">Display</th>
-            <td class="Valor">Flex</td>
-        </tr>
-        <tr>
-            <td class="propriedade">flex-direction</td>
-            <td class="valor">valor</td>
-        </tr>
-        <tr>
-            <td class="propriedade">justify-content</td>
-            <td class="valor">valor</td>
-        </tr>
-        <tr>
-            <td class="propriedade">flex-start</td>
-            <td class="valor">valor</td>
-        </tr>
-    </table>
+            <nav>
+                <ul>
+                    <li class="logo"><a href="#Flexbox">Flexbox</a></li>
+                    <li><a href="#Wrap">Wrap</a></li>
+                    <li><a href="#Flex-Flow">Flex-Flow</a></li>
+                    <li><a href="#Justify-Content">Justify-Content</a></li>
+                    <li><a href="#Align-Items">Align-Items</a></li>
+                    <li><a href="#Align-Content">Align-Content</a></li>
+                    <li><a href="#Centro-Perfeito">Centro-Perfeito</a></li>
+                    <li><a href="#contato">Contato</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
 
-    <p>
-    <h1>Flex</h1>
-    </p>
-    <div class="conteiner">
-        <div class="contido">1</div>
-        <div class="contido">2</div>
-        <div class="contido">3</div>
-        <div class="contido">4</div>
-        <div class="contido">5</div>
-        <div class="contido">6</div>
-        <div class="contido">7</div>
-        <div class="contido">8</div>
-        <div class="contido">9</div>
-        <div class="contido">10</div>
-    </div>
-    <pre class="codigo" style="background-color: black; color:aliceblue;"> <code><span>#Style.css</span>
+    <p id="Inicio">ancora</p>
+
+    <h1 id="Flexbox" class="titulos">Flexbox</h1>
+
+    <p class="flexbox">O flexbox é um modelo de layout unidimensional que permite organizar e alinhar os elementos
+        dentro de um elemento pai, chamado de container. O flexbox é composto por um conjunto de propriedades que podem
+        ser aplicadas ao container e aos seus elementos filhos, chamados de itens. O flexbox facilita a criação de
+        layouts responsivos e adaptáveis para diferentes tamanhos de tela.</p>
+
+    <details class="detalhes">
+        <summary>
+            <h1 class="titulos">Flex</h1>
+        </summary>
+        <div class="conteiner">
+            <div class="contido">1</div>
+            <div class="contido">2</div>
+            <div class="contido">3</div>
+            <div class="contido">4</div>
+            <div class="contido">5</div>
+            <div class="contido">6</div>
+            <div class="contido">7</div>
+            <div class="contido">8</div>
+            <div class="contido">9</div>
+            <div class="contido">10</div>
+        </div>
+        <pre class="codigo"> <code class="codigo"><span class="codtitle">#Style.css</span>
             
-    <span>.conteiner{</span>
-            <span>height:200px ;</span>
-            <span>width: 700px;</span>
-            <span>background-color: rgb(187, 187, 187);</span>
-            <span>border: 1px solid #000000;</span>
-            <span>display: flex;</span>
-    <span>}</span>
+    <span class="codsubtitle">.conteiner{</span>
+            <span class="codtext">height:200px ;</span>
+            <span class="codtext">width: 700px;</span>
+            <span class="codtext">background-color: rgb(187, 187, 187);</span>
+            <span class="codtext">border: 1px solid #000000;</span>
+            <span class="codtext">display: flex;</span>
+    <span class="codsubtitle">}</span>
     </code></pre>
-
-    <h1></h1>
-    <table>
-        <tr>
-            <th class="propriedade">Propriedade</th>
-            <td class="valor">Valor</td>
-        </tr>
-        <tr>
-            <td class="propriedade">flex-direction</td>
-            <td class="valor">valor</td>
-        </tr>
-        <tr>
-            <td class="propriedade">justify-content</td>
-            <td class="valor">valor</td>
-        </tr>
-        <tr>
-            <td class="propriedade">flex-start</td>
-            <td class="valor">valor</td>
-        </tr>
-    </table>
+    </details>
+    <p class="flexbox">O valor CSS display flex é utilizado para organizar os elementos HTML de forma responsiva</p>
 
     <p>
-    <h1>Column</h1>
-    </p>
-    <div class="conteiner2">
-        <div class="contido">1</div>
-        <div class="contido">2</div>
-        <div class="contido">3</div>
-    </div>
+    <details class="detalhes">
+        <summary>
+            <h1 class="titulos">Column</h1>
+        </summary>
+        </p>
+        <div class="conteiner2">
+            <div class="contido">1</div>
+            <div class="contido">2</div>
+            <div class="contido">3</div>
+        </div>
 
-    <pre class="codigo" style="background-color: black; color:aliceblue;"> <code><span>#Style.css</span>         
-    <span>.conteiner{</span>
-        <span>height:200px ;</span>
-        <span>width: 700px;</span>
-        <span>background-color: rgb(187, 187, 187);</span>
-        <span>border: 1px solid #000000;</span>
-        <span>display: flex;</span>
-        <span>flex-direction: column;</span>
-    <span>}</span>
+        <pre class="codigo"> <code class="codigo"><span class="codtitle">#Style.css</span>         
+    <span class="codsubtitle">.conteiner{</span>
+        <span class="codtext">height:200px ;</span>
+        <span class="codtext">width: 700px;</span>
+        <span class="codtext">background-color: rgb(187, 187, 187);</span>
+        <span class="codtext">border: 1px solid #000000;</span>
+        <span class="codtext">display: flex;</span>
+        <span class="codtext">flex-direction: column;</span>
+    <span class="codsubtitle">}</span>
     </code></pre>
+    </details>
+    <p class="flexbox">A propriedade define em que direção o contêiner quer empilhar os itens flex.flex-direction</p>
+    <p class="flexbox">O valor empilha os itens flexíveis verticalmente (de cima para baixo):column</p>
+    <p>
+    <details class="detalhes">
+        <summary>
+            <h1 class="titulos">Column-Reverse</h1>
+        </summary>
+        </p>
+        <div class="conteiner3">
+            <div class="contido">1</div>
+            <div class="contido">2</div>
+            <div class="contido">3</div>
+        </div>
 
-    <h1></h1>
-    <table>
-        <tr>
-            <th class="propriedade">Propriedade</th>
-            <td class="valor">Valor</td>
-        </tr>
-        <tr>
-            <td class="propriedade">flex-direction</td>
-            <td class="valor">valor</td>
-        </tr>
-        <tr>
-            <td class="propriedade">justify-content</td>
-            <td class="valor">valor</td>
-        </tr>
-        <tr>
-            <td class="propriedade">flex-start</td>
-            <td class="valor">valor</td>
-        </tr>
-    </table>
+        <pre class="codigo"> <code class="codigo"><span class="codtitle">#Style.css</span>         
+    <span class="codsubtitle">.conteiner{</span>
+        <span class="codtext">height:200px ;</span>
+        <span class="codtext">width: 700px;</span>
+        <span class="codtext">background-color: rgb(187, 187, 187);</span>
+        <span class="codtext">border: 1px solid #000000;</span>
+        <span class="codtext">display: flex;</span>
+        <span class="codtext">flex-direction: column-reverse;</span>
+    <span class="codsubtitle">}</span>
+    </code></pre>
+    </details>
+    <p class="flexbox">O valor empilha os itens flexíveis verticalmente (mas de baixo para cima):column-reverse</p>
+
 
     <p>
-    <h1>Column-reverse</h1>
-    </p>
-    <div class="conteiner3">
-        <div class="contido">1</div>
-        <div class="contido">2</div>
-        <div class="contido">3</div>
-    </div>
+    <details class="detalhes">
+        <summary>
+            <h1 class="titulos">Row</h1>
+        </summary>
+        </p>
+        <div class="conteiner4">
+            <div class="contido">1</div>
+            <div class="contido">2</div>
+            <div class="contido">3</div>
+            <div class="contido">4</div>
+            <div class="contido">5</div>
+            <div class="contido">6</div>
+            <div class="contido">7</div>
+            <div class="contido">8</div>
+            <div class="contido">9</div>
+            <div class="contido">10</div>
+        </div>
 
-    <pre class="codigo" style="background-color: black; color:aliceblue;"> <code><span>#Style.css</span>         
-    <span>.conteiner{</span>
-        <span>height:200px ;</span>
-        <span>width: 700px;</span>
-        <span>background-color: rgb(187, 187, 187);</span>
-        <span>border: 1px solid #000000;</span>
-        <span>display: flex;</span>
-        <span>flex-direction: column-reverse;</span>
-    <span>}</span>
+        <pre class="codigo"> <code class="codigo"><span class="codtitle">#Style.css</span>         
+    <span class="codsubtitle">.conteiner{</span>
+        <span class="codtext">height:200px ;</span>
+        <span class="codtext">width: 700px;</span>
+        <span class="codtext">background-color: rgb(187, 187, 187);</span>
+        <span class="codtext">border: 1px solid #000000;</span>
+        <span class="codtext">display: flex;</span>
+        <span class="codtext">flex-direction: row;</span>
+    <span class="codsubtitle">}</span>
     </code></pre>
+    </details>
 
-    <h1></h1>
-    <table>
-        <tr>
-            <th class="propriedade">Propriedade</th>
-            <td class="valor">Valor</td>
-        </tr>
-        <tr>
-            <td class="propriedade">flex-direction</td>
-            <td class="valor">valor</td>
-        </tr>
-        <tr>
-            <td class="propriedade">justify-content</td>
-            <td class="valor">valor</td>
-        </tr>
-        <tr>
-            <td class="propriedade">flex-start</td>
-            <td class="valor">valor</td>
-        </tr>
-    </table>
+    <p class="flexbox">O valor empilha os itens flexíveis horizontalmente (da esquerda para a direita):row</p>
 
     <p>
-    <h1>Row</h1>
-    </p>
-    <div class="conteiner4">
-        <div class="contido">1</div>
-        <div class="contido">2</div>
-        <div class="contido">3</div>
-        <div class="contido">4</div>
-        <div class="contido">5</div>
-        <div class="contido">6</div>
-        <div class="contido">7</div>
-        <div class="contido">8</div>
-        <div class="contido">9</div>
-        <div class="contido">10</div>
-    </div>
+    <details class="detalhes">
+        <summary>
+            <h1 class="titulos">Row-Reverse</h1>
+        </summary>
+        </p>
+        <div class="conteiner5">
+            <div class="contido">1</div>
+            <div class="contido">2</div>
+            <div class="contido">3</div>
+            <div class="contido">4</div>
+            <div class="contido">5</div>
+            <div class="contido">6</div>
+            <div class="contido">7</div>
+            <div class="contido">8</div>
+            <div class="contido">9</div>
+            <div class="contido">10</div>
+        </div>
 
-    <pre class="codigo" style="background-color: black; color:aliceblue;"> <code><span>#Style.css</span>         
-    <span>.conteiner{</span>
-        <span>height:200px ;</span>
-        <span>width: 700px;</span>
-        <span>background-color: rgb(187, 187, 187);</span>
-        <span>border: 1px solid #000000;</span>
-        <span>display: flex;</span>
-        <span>flex-direction: row;</span>
-    <span>}</span>
+        <pre class="codigo"> <code class="codigo"><span class="codtitle">#Style.css</span>         
+    <span class="codsubtitle">.conteiner{</span>
+        <span class="codtext">height:200px ;</span>
+        <span class="codtext">width: 700px;</span>
+        <span class="codtext">background-color: rgb(187, 187, 187);</span>
+        <span class="codtext">border: 1px solid #000000;</span>
+        <span class="codtext">display: flex;</span>
+        <span class="codtext">flex-direction: row-reverse;</span>
+    <span class="codsubtitle">}</span>
     </code></pre>
+    </details>
 
-    <h1></h1>
-    <table>
-        <tr>
-            <th class="propriedade">Propriedade</th>
-            <td class="valor">Valor</td>
-        </tr>
-        <tr>
-            <td class="propriedade">flex-direction</td>
-            <td class="valor">valor</td>
-        </tr>
-        <tr>
-            <td class="propriedade">justify-content</td>
-            <td class="valor">valor</td>
-        </tr>
-        <tr>
-            <td class="propriedade">flex-start</td>
-            <td class="valor">valor</td>
-        </tr>
-    </table>
+    <p class="flexbox">O valor empilha os itens flexíveis horizontalmente (mas da direita para a esquerda):row-reverse
+    </p>
 
     <p>
-    <h1>Row-reverse</h1>
-    </p>
-    <div class="conteiner5">
-        <div class="contido">1</div>
-        <div class="contido">2</div>
-        <div class="contido">3</div>
-        <div class="contido">4</div>
-        <div class="contido">5</div>
-        <div class="contido">6</div>
-        <div class="contido">7</div>
-        <div class="contido">8</div>
-        <div class="contido">9</div>
-        <div class="contido">10</div>
-    </div>
+    <details class="detalhes">
+        <summary>
+            <h1 id="Wrap" class="titulos">Wrap</h1>
+        </summary>
+        </p>
+        <div class="conteiner6">
+            <div class="contido">1</div>
+            <div class="contido">2</div>
+            <div class="contido">3</div>
+            <div class="contido">4</div>
+            <div class="contido">5</div>
+            <div class="contido">6</div>
+            <div class="contido">7</div>
+            <div class="contido">8</div>
+            <div class="contido">9</div>
+            <div class="contido">10</div>
+        </div>
 
-    <pre class="codigo" style="background-color: black; color:aliceblue;"> <code><span>#Style.css</span>         
-    <span>.conteiner{</span>
-        <span>height:200px ;</span>
-        <span>width: 700px;</span>
-        <span>background-color: rgb(187, 187, 187);</span>
-        <span>border: 1px solid #000000;</span>
-        <span>display: flex;</span>
-        <span>flex-direction: row-reverse;</span>
-    <span>}</span>
+        <pre class="codigo"> <code class="codigo"><span class="codtitle">#Style.css</span>         
+    <span class="codsubtitle">.conteiner{</span>
+        <span class="codtext">height:200px ;</span>
+        <span class="codtext">width: 700px;</span>
+        <span class="codtext" >background-color: rgb(187, 187, 187);</span>
+        <span class="codtext">border: 1px solid #000000;</span>
+        <span class="codtext">display: flex;</span>
+        <span class="codtext">flex-wrap: wrap;</span>
+    <span class="codsubtitle">}</span>
     </code></pre>
+    </details>
 
-    <h1></h1>
-    <table>
-        <tr>
-            <th class="propriedade">Propriedade</th>
-            <td class="valor">Valor</td>
-        </tr>
-        <tr>
-            <td class="propriedade">flex-direction</td>
-            <td class="valor">valor</td>
-        </tr>
-        <tr>
-            <td class="propriedade">justify-content</td>
-            <td class="valor">valor</td>
-        </tr>
-        <tr>
-            <td class="propriedade">flex-start</td>
-            <td class="valor">valor</td>
-        </tr>
-    </table>
+    <p class="flexbox">A propriedade especifica se o Os itens flex devem embrulhar ou não.flex-wrap</p>
+    <p class="flexbox"> O valor especifica que os itens flexíveis serão quebrados, se necessário:wrap</p>
 
     <p>
-    <h1>Wrap</h1>
-    </p>
-    <div class="conteiner6">
-        <div class="contido">1</div>
-        <div class="contido">2</div>
-        <div class="contido">3</div>
-        <div class="contido">4</div>
-        <div class="contido">5</div>
-        <div class="contido">6</div>
-        <div class="contido">7</div>
-        <div class="contido">8</div>
-        <div class="contido">9</div>
-        <div class="contido">10</div>
+    <details class="detalhes">
+        <summary>
+            <h1 class="titulos">NoWrap</h1>
+        </summary>
+        </p>
+        <div class="conteiner7">
+            <div class="contido">1</div>
+            <div class="contido">2</div>
+            <div class="contido">3</div>
+            <div class="contido">4</div>
+            <div class="contido">5</div>
+            <div class="contido">6</div>
+            <div class="contido">7</div>
+            <div class="contido">8</div>
+            <div class="contido">9</div>
+            <div class="contido">10</div>
 
-    </div>
+        </div>
 
-    <pre class="codigo" style="background-color: black; color:aliceblue;"> <code><span>#Style.css</span>         
-    <span>.conteiner{</span>
-        <span>height:200px ;</span>
-        <span>width: 700px;</span>
-        <span>background-color: rgb(187, 187, 187);</span>
-        <span>border: 1px solid #000000;</span>
-        <span>display: flex;</span>
-        <span>flex-wrap: wrap;</span>
-    <span>}</span>
+        <pre class="codigo"> <code class="codigo"><span class="codtitle">#Style.css</span>         
+    <span class="codsubtitle">.conteiner{</span>
+        <span class="codtext">height:200px ;</span>
+        <span class="codtext">width: 700px;</span>
+        <span class="codtext">background-color: rgb(187, 187, 187);</span>
+        <span class="codtext">border: 1px solid #000000;</span>
+        <span class="codtext">display: flex;</span>
+        <span class="codtext">flex-wrap: nowrap;</span>
+    <span class="codsubtitle">}</span>
     </code></pre>
+    </details>
 
-    <h1></h1>
-    <table>
-        <tr>
-            <th class="propriedade">Propriedade</th>
-            <td class="valor">Valor</td>
-        </tr>
-        <tr>
-            <td class="propriedade">flex-direction</td>
-            <td class="valor">valor</td>
-        </tr>
-        <tr>
-            <td class="propriedade">justify-content</td>
-            <td class="valor">valor</td>
-        </tr>
-        <tr>
-            <td class="propriedade">flex-start</td>
-            <td class="valor">valor</td>
-        </tr>
-    </table>
+    <p class="flexbox">O valor especifica que os itens flexíveis não serão quebrados (isso é padrão):nowrap</p>
 
     <p>
-    <h1>Nowrap</h1>
-    </p>
-    <div class="conteiner7">
-        <div class="contido">1</div>
-        <div class="contido">2</div>
-        <div class="contido">3</div>
-        <div class="contido">4</div>
-        <div class="contido">5</div>
-        <div class="contido">6</div>
-        <div class="contido">7</div>
-        <div class="contido">8</div>
-        <div class="contido">9</div>
-        <div class="contido">10</div>
+    <details class="detalhes">
+        <summary>
+            <h1 id="Flex-Flow" class="titulos">Flex-Flow</h1>
+        </summary>
+        </p>
+        <div class="conteiner8">
+            <div class="contido">1</div>
+            <div class="contido">2</div>
+            <div class="contido">3</div>
+            <div class="contido">4</div>
+            <div class="contido">5</div>
 
-    </div>
 
-    <pre class="codigo" style="background-color: black; color:aliceblue;"> <code><span>#Style.css</span>         
-    <span>.conteiner{</span>
-        <span>height:200px ;</span>
-        <span>width: 700px;</span>
-        <span>background-color: rgb(187, 187, 187);</span>
-        <span>border: 1px solid #000000;</span>
-        <span>display: flex;</span>
-        <span>flex-wrap: nowrap;</span>
-    <span>}</span>
+        </div>
+
+        <pre class="codigo"> <code class="codigo"><span class="codtitle">#Style.css</span>         
+    <span class="codsubtitle">.conteiner{</span>
+        <span class="codtext">height:200px ;</span>
+        <span class="codtext">width: 700px;</span>
+        <span class="codtext" >background-color: rgb(187, 187, 187);</span>
+        <span class="codtext">border: 1px solid #000000;</span>
+        <span class="codtext">display: flex;</span>
+        <span class="codtext">flex-flow:row wrap;</span>
+    <span class="codsubtitle">}</span>
     </code></pre>
+    </details>
 
-    <h1></h1>
-    <table>
-        <tr>
-            <th class="propriedade">Propriedade</th>
-            <td class="valor">Valor</td>
-        </tr>
-        <tr>
-            <td class="propriedade">flex-direction</td>
-            <td class="valor">valor</td>
-        </tr>
-        <tr>
-            <td class="propriedade">justify-content</td>
-            <td class="valor">valor</td>
-        </tr>
-        <tr>
-            <td class="propriedade">flex-start</td>
-            <td class="valor">valor</td>
-        </tr>
-    </table>
+    <p class="flexbox">A propriedade é uma propriedade abreviada para definir as propriedades e .flex-flow
+        flex-directionflex-wrap</p>
 
     <p>
-    <h1>Row wrap</h1>
-    </p>
-    <div class="conteiner8">
-        <div class="contido">1</div>
-        <div class="contido">2</div>
-        <div class="contido">3</div>
-        <div class="contido">4</div>
-        <div class="contido">5</div>
+    <details class="detalhes">
+        <summary>
+            <h1 id="Justify-Content" class="titulos">Justify-Content</h1>
+        </summary>
+        </p>
+        <div class="conteiner9">
+            <div class="contido">1</div>
+            <div class="contido">2</div>
+            <div class="contido">3</div>
+            <div class="contido">4</div>
+            <div class="contido">5</div>
 
 
-    </div>
+        </div>
 
-    <pre class="codigo" style="background-color: black; color:aliceblue;"> <code><span>#Style.css</span>         
-    <span>.conteiner{</span>
-        <span>height:200px ;</span>
-        <span>width: 700px;</span>
-        <span>background-color: rgb(187, 187, 187);</span>
-        <span>border: 1px solid #000000;</span>
-        <span>display: flex;</span>
-        <span>flex-flow:row wrap;</span>
-    <span>}</span>
+        <pre class="codigo"> <code class="codigo"><span class="codtitle">#Style.css</span>         
+    <span class="codsubtitle">.conteiner{</span>
+        <span class="codtext">height:200px ;</span>
+        <span class="codtext">width: 700px;</span>
+        <span class="codtext">background-color: rgb(187, 187, 187);</span>
+        <span class="codtext">border: 1px solid #000000;</span>
+        <span class="codtext">display: flex;</span>
+        <span class="codtext">justify-content: initial</span>
+        <span class="codsubtitle">}</span>
     </code></pre>
+    </details>
 
-    <h1></h1>
-    <table>
-        <tr>
-            <th class="propriedade">Propriedade</th>
-            <td class="valor">Valor</td>
-        </tr>
-        <tr>
-            <td class="propriedade">flex-direction</td>
-            <td class="valor">valor</td>
-        </tr>
-        <tr>
-            <td class="propriedade">justify-content</td>
-            <td class="valor">valor</td>
-        </tr>
-        <tr>
-            <td class="propriedade">flex-start</td>
-            <td class="valor">valor</td>
-        </tr>
-    </table>
+    <p class="flexbox">A propriedade é usada para Alinhe os itens flex:justify-content</p>
 
     <p>
-    <h1>Justify Content</h1>
-    </p>
-    <div class="conteiner9">
-        <div class="contido">1</div>
-        <div class="contido">2</div>
-        <div class="contido">3</div>
-        <div class="contido">4</div>
-        <div class="contido">5</div>
+    <details class="detalhes">
+        <summary>
+            <h1 class="titulos">Center</h1>
+        </summary>
+        </p>
+        <div class="conteiner10">
+            <div class="contido">1</div>
+            <div class="contido">2</div>
 
 
-    </div>
 
-    <pre class="codigo" style="background-color: black; color:aliceblue;"> <code><span>#Style.css</span>         
-    <span>.conteiner{</span>
-        <span>height:200px ;</span>
-        <span>width: 700px;</span>
-        <span>background-color: rgb(187, 187, 187);</span>
-        <span>border: 1px solid #000000;</span>
-        <span>display: flex;</span>
-        <span>justify-content: initial</span>
-        <span>}</span>
+        </div>
+
+        <pre class="codigo"> <code class="codigo"><span class="codtitle">#Style.css</span>         
+    <span class="codsubtitle">.conteiner{</span>
+        <span class="codtext">height:200px ;</span>
+        <span class="codtext">width: 700px;</span>
+        <span class="codtext">background-color: rgb(187, 187, 187);</span>
+        <span class="codtext">border: 1px solid #000000;</span>
+        <span class="codtext">display: flex;</span>
+        <span class="codtext">justify-content: center</span>
+        <span class="codsubtitle">}</span>
     </code></pre>
-    <h1></h1>
-   
-    <h1></h1>
-    <table>
-        <tr>
-            <th class="propriedade">Propriedade</th>
-            <td class="valor">Valor</td>
-        </tr>
-        <tr>
-            <td class="propriedade">flex-direction</td>
-            <td class="valor">valor</td>
-        </tr>
-        <tr>
-            <td class="propriedade">justify-content</td>
-            <td class="valor">valor</td>
-        </tr>
-        <tr>
-            <td class="propriedade">flex-start</td>
-            <td class="valor">valor</td>
-        </tr>
-    </table>
+    </details>
+
+    <p class="flexbox">O valor alinha os itens flexíveis no centro do contêiner:center</p>
 
     <p>
-    <h1>Center</h1>
-    </p>
-    <div class="conteiner10">
-        <div class="contido">1</div>
-        <div class="contido">2</div>
+    <details class="detalhes">
+        <summary>
+            <h1 class="titulos">Flex-Start</h1>
+        </summary>
+        </p>
+        <div class="conteiner11">
+            <div class="contido">1</div>
+            <div class="contido">2</div>
 
 
 
-    </div>
 
-    <pre class="codigo" style="background-color: black; color:aliceblue;"> <code><span>#Style.css</span>         
-    <span>.conteiner{</span>
-        <span>height:200px ;</span>
-        <span>width: 700px;</span>
-        <span>background-color: rgb(187, 187, 187);</span>
-        <span>border: 1px solid #000000;</span>
-        <span>display: flex;</span>
-        <span>justify-content: center</span>
-        <span>}</span>
+        </div>
+
+        <pre class="codigo"> <code class="codigo"><span class="codtitle">#Style.css</span>         
+    <span class="codsubtitle">.conteiner{</span>
+        <span class="codtext">height:200px ;</span>
+        <span class="codtext">width: 700px;</span>
+        <span class="codtext">background-color: rgb(187, 187, 187);</span>
+        <span class="codtext">border: 1px solid #000000;</span>
+        <span class="codtext">display: flex;</span>
+        <span class="codtext">justify-content: flex-start</span>
+        <span class="codsubtitle">}</span>
     </code></pre>
-    <h1></h1>
+    </details>
 
-    <h1></h1>
-    <table>
-        <tr>
-            <th class="propriedade">Propriedade</th>
-            <td class="valor">Valor</td>
-        </tr>
-        <tr>
-            <td class="propriedade">flex-direction</td>
-            <td class="valor">valor</td>
-        </tr>
-        <tr>
-            <td class="propriedade">justify-content</td>
-            <td class="valor">valor</td>
-        </tr>
-        <tr>
-            <td class="propriedade">flex-start</td>
-            <td class="valor">valor</td>
-        </tr>
-    </table>
+    <p class="flexbox">O valor alinha os itens flexíveis no início do contêiner (isso é padrão):flex-start</p>
 
     <p>
-    <h1>Flex-start</h1>
-    </p>
-    <div class="conteiner11">
-        <div class="contido">1</div>
-        <div class="contido">2</div>
+    <details class="detalhes">
+        <summary>
+            <h1 class="titulos">Flex-End</h1>
+        </summary>
+        </p>
+        <div class="conteiner12">
+            <div class="contido">1</div>
+            <div class="contido">2</div>
 
 
 
 
-    </div>
+        </div>
 
-    <pre class="codigo" style="background-color: black; color:aliceblue;"> <code><span>#Style.css</span>         
-    <span>.conteiner{</span>
-        <span>height:200px ;</span>
-        <span>width: 700px;</span>
-        <span>background-color: rgb(187, 187, 187);</span>
-        <span>border: 1px solid #000000;</span>
-        <span>display: flex;</span>
-        <span>justify-content: flex-start</span>
-        <span>}</span>
+        <pre class="codigo"> <code class="codigo"><span class="codtitle">#Style.css</span>         
+    <span class="codsubtitle">.conteiner{</span>
+        <span class="codtext">height:200px ;</span>
+        <span class="codtext">width: 700px;</span>
+        <span class="codtext">background-color: rgb(187, 187, 187);</span>
+        <span class="codtext">border: 1px solid #000000;</span>
+        <span class="codtext">display: flex;</span>
+        <span class="codtext">justify-content: flex-end</span>
+        <span class="codsubtitle">}</span>
     </code></pre>
-    <h1></h1>
+    </details>
 
-    <h1></h1>
-    <table>
-        <tr>
-            <th class="propriedade">Propriedade</th>
-            <td class="valor">Valor</td>
-        </tr>
-        <tr>
-            <td class="propriedade">flex-direction</td>
-            <td class="valor">valor</td>
-        </tr>
-        <tr>
-            <td class="propriedade">justify-content</td>
-            <td class="valor">valor</td>
-        </tr>
-        <tr>
-            <td class="propriedade">flex-start</td>
-            <td class="valor">valor</td>
-        </tr>
-    </table>
+    <p class="flexbox">O valor alinha os itens flexíveis no final do contêiner:flex-end</p>
 
     <p>
-    <h1>Space-around</h1>
-    </p>
-    <div class="conteiner13">
-        <div class="contido">1</div>
-        <div class="contido">2</div>
+    <details class="detalhes">
+        <summary>
+            <h1 class="titulos">Space-Around</h1>
+        </summary>
+        </p>
+        <div class="conteiner13">
+            <div class="contido">1</div>
+            <div class="contido">2</div>
 
 
 
 
-    </div>
+        </div>
 
-    <pre class="codigo" style="background-color: black; color:aliceblue;"> <code><span>#Style.css</span>         
-    <span>.conteiner{</span>
-        <span>height:200px ;</span>
-        <span>width: 700px;</span>
-        <span>background-color: rgb(187, 187, 187);</span>
-        <span>border: 1px solid #000000;</span>
-        <span>display: flex;</span>
-        <span>justify-content: space-around</span>
-        <span>}</span>
+        <pre class="codigo"> <code class="codigo"><span class="codtitle">#Style.css</span>         
+    <span class="codsubtitle">.conteiner{</span>
+        <span class="codtext">height:200px ;</span>
+        <span class="codtext">width: 700px;</span>
+        <span class="codtext">background-color: rgb(187, 187, 187);</span>
+        <span class="codtext">border: 1px solid #000000;</span>
+        <span class="codtext">display: flex;</span>
+        <span class="codtext">justify-content: space-around</span>
+        <span class="codsubtitle">}</span>
     </code></pre>
-    <h1></h1>
+    </details>
 
-    <h1></h1>
-    <table>
-        <tr>
-            <th class="propriedade">Propriedade</th>
-            <td class="valor">Valor</td>
-        </tr>
-        <tr>
-            <td class="propriedade">flex-direction</td>
-            <td class="valor">valor</td>
-        </tr>
-        <tr>
-            <td class="propriedade">justify-content</td>
-            <td class="valor">valor</td>
-        </tr>
-        <tr>
-            <td class="propriedade">flex-start</td>
-            <td class="valor">valor</td>
-        </tr>
-    </table>
+    <p class="flexbox">O valor exibe os itens flexíveis com espaço antes, entre, e após as linhas:space-around</p>
 
     <p>
-    <h1>Space-between</h1>
-    </p>
-    <div class="conteiner14">
-        <div class="contido">1</div>
-        <div class="contido">2</div>
-        <div class="contido">3</div>
-        <div class="contido">4</div>
-        <div class="contido">5</div>
-        <div class="contido">6</div>
+    <details class="detalhes">
+        <summary>
+            <h1 class="titulos">Space-Between</h1>
+        </summary>
+        </p>
+        <div class="conteiner14">
+            <div class="contido">1</div>
+            <div class="contido">2</div>
+            <div class="contido">3</div>
+            <div class="contido">4</div>
+            <div class="contido">5</div>
+            <div class="contido">6</div>
 
 
 
 
-    </div>
+        </div>
 
-    <pre class="codigo" style="background-color: black; color:aliceblue;"> <code><span>#Style.css</span>         
-    <span>.conteiner{</span>
-        <span>height:200px ;</span>
-        <span>width: 700px;</span>
-        <span>background-color: rgb(187, 187, 187);</span>
-        <span>border: 1px solid #000000;</span>
-        <span>display: flex;</span>
-        <span>justify-content: space-between</span>
-        <span>}</span>
+        <pre class="codigo"> <code class="codigo"><span class="codtitle">#Style.css</span>         
+    <span class="codsubtitle">.conteiner{</span>
+        <span class="codtext">height:200px ;</span>
+        <span class="codtext">>width: 700px;</span>
+        <span class="codtext">background-color: rgb(187, 187, 187);</span>
+        <span class="codtext">border: 1px solid #000000;</span>
+        <span class="codtext">display: flex;</span>
+        <span class="codtext">justify-content: space-between</span>
+        <span class="codsubtitle">}</span>
     </code></pre>
-    <h1></h1>
+    </details>
+
+    <p class="flexbox">O valor exibe os itens flexíveis com espaço entre o Linhas:space-between</p>
+
+    <p>
+    <details class="detalhes">
+        <summary>
+            <h1 id="Align-Items" class="titulos">Align-Items</h1>
+        </summary>
+        </p>
+        <div class="conteiner15">
+            <div class="contido">1</div>
+            <div class="contido">2</div>
+            <div class="contido">3</div>
+            <div class="contido">4</div>
+            <div class="contido">5</div>
+            <div class="contido">6</div>
+
+
+
+
+        </div>
+
+        <pre class="codigo"> <code class="codigo"><span class="codtitle">#Style.css</span>         
+    <span class="codsubtitle">.conteiner{</span>
+        <span class="codtext">height:200px ;</span>
+        <span class="codtext">width: 700px;</span>
+        <span class="codtext">background-color: rgb(187, 187, 187);</span>
+        <span class="codtext">border: 1px solid #000000;</span>
+        <span class="codtext">display: flex;</span>
+        <span class="codtext">align-items: center</span>
+        <span class="codsubtitle">}</span>
+    </code></pre>
+    </details>
+
+    <p class="flexbox">A propriedade é usada para alinhar os itens flex.align-items</p>
+    <p class="flexbox">O valor alinha os itens flexíveis no meio do recipiente:center</p>
+
+    <p>
+    <details class="detalhes">
+        <summary>
+            <h1 class="titulos">Ai Flex-Start</h1>
+        </summary>
+        </p>
+        <div class="conteiner16">
+            <div class="contido">1</div>
+            <div class="contido">2</div>
+            <div class="contido">3</div>
+            <div class="contido">4</div>
+            <div class="contido">5</div>
+            <div class="contido">6</div>
+
+
+
+
+        </div>
+
+        <pre class="codigo"> <code class="codigo"><span class="codtitle">#Style.css</span>         
+    <span class="codsubtitle">.conteiner{</span>
+        <span class="codtext">height:200px ;</span>
+        <span class="codtext">width: 700px;</span>
+        <span class="codtext">background-color: rgb(187, 187, 187);</span>
+        <span class="codtext">border: 1px solid #000000;</span>
+        <span class="codtext">display: flex;</span>
+        <span class="codtext">align-items: flex-start</span>
+        <span clclass="codsubtitle">}</span>
+    </code></pre>
+    </details>
+
+    <p class="flexbox">O valor alinha os itens flexíveis na parte superior do contêiner:flex-start</p>
+
+    <p>
+    <details class="detalhes">
+        <summary>
+            <h1 class="titulos">Ai Flex-End</h1>
+        </summary>
+        </p>
+        <div class="conteiner17">
+            <div class="contido">1</div>
+            <div class="contido">2</div>
+            <div class="contido">3</div>
+            <div class="contido">4</div>
+            <div class="contido">5</div>
+            <div class="contido">6</div>
+
+
+
+
+        </div>
+
+        <pre class="codigo"> <code class="codigo"><span class="codtitle">#Style.css</span>         
+    <span class="codsubtitle">.conteiner{</span>
+        <span class="codtext">height:200px ;</span>
+        <span class="codtext">width: 700px;</span>
+        <span class="codtext">background-color: rgb(187, 187, 187);</span>
+        <span class="codtext">border: 1px solid #000000;</span>
+        <span class="codtext">display: flex;</span>
+        <span class="codtext">align-items: flex-end</span>
+        <span class="codsubtitle">}</span>
+    </code></pre>
+    </details>
+
+    <p class="flexbox">O valor alinha os itens flexíveis na parte inferior do contêiner:flex-end</p>
+
+    <p>
+    <details class="detalhes">
+        <summary>
+            <h1 class="titulos">Stretch</h1>
+        </summary>
+        </p>
+        <div class="conteiner18">
+            <div class="contido">1</div>
+            <div class="contido">2</div>
+            <div class="contido">3</div>
+            <div class="contido">4</div>
+            <div class="contido">5</div>
+            <div class="contido">6</div>
+
+
+
+
+        </div>
+
+        <pre class="codigo"> <code class="codigo"><span class="codtitle">#Style.css</span>         
+    <span class="codsubtitle">.conteiner{</span>
+        <span class="codtext">height:200px ;</span>
+        <span class="codtext">width: 700px;</span>
+        <span class="codtext">background-color: rgb(187, 187, 187);</span>
+        <span class="codtext">border: 1px solid #000000;</span>
+        <span class="codtext">display: flex;</span>
+        <span class="codtext">align-items: stretch</span>
+        <span class="codsubtitle">}</span>
+    </code></pre>
+    </details>
+
+    <p class="flexbox">O valor estica os itens flexíveis para encher o contêiner (isso é padrão):stretch</p>
+
+    <p>
+    <details class="detalhes">
+        <summary>
+            <h1 class="titulos">Baseline</h1>
+        </summary>
+        </p>
+        <div class="conteiner19">
+            <div class="contido">1</div>
+            <div class="contido">
+                <h1 class="fundo">2</h1>
+            </div>
+            <div class="contido">3</div>
+            <div class="contido">4</div>
+            <div class="contido">
+                <h3 class="fundo">5</h3>
+            </div>
+            <div class="contido">6</div>
+
+
+
+
+        </div>
+
+        <pre class="codigo"> <code class="codigo"><span class="codtitle">#Style.css</span>         
+    <span class="codsubtitle">.conteiner{</span>
+        <span class="codtext">height:200px ;</span>
+        <span class="codtext">width: 700px;</span>
+        <span class="codtext">background-color: rgb(187, 187, 187);</span>
+        <span class="codtext">border: 1px solid #000000;</span>
+        <span class="codtext">display: flex;</span>
+        <span class="codtext">align-items: baseline;</span>
+        <span class="codsubtitle">}</span>
+    </code></pre>
+    </details>
+
+    <p class="flexbox">O valor alinha os itens flexíveis, como suas linhas de base se alinham:baseline</p>
+    <p class="flexbox">Nota: o exemplo usa tamanho de fonte diferente para demonstrar que os itens são alinhados pela
+        linha de base do texto:</p>
+
+    <p>
+    <details class="detalhes">
+        <summary>
+            <h1 id="Align-Content" class="titulos">Ac Space-Between</h1>
+        </summary>
+        </p>
+        <div class="conteiner20">
+            <div class="contido">1</div>
+            <div class="contido">2</div>
+            <div class="contido">3</div>
+            <div class="contido">4</div>
+            <div class="contido">5</div>
+            <div class="contido">6</div>
+
+
+
+
+        </div>
+
+        <pre class="codigo"> <code class="codigo"><span class="codtitle">#Style.css</span>         
+    <span class="codsubtitle">.conteiner{</span>
+        <span class="codtext">height:200px ;</span>
+        <span class="codtext">width: 700px;</span>
+        <span class="codtext">background-color: rgb(187, 187, 187);</span>
+        <span class="codtext">border: 1px solid #000000;</span>
+        <span class="codtext">display: flex;</span>
+        <span class="codtext">flex-wrap: wrap;</span>
+        <span class="codtext">align-content: space-between;</span>
+        <span class="codsubtitle">}</span>
+    </code></pre>
+    </details>
+
+    <p class="flexbox">A propriedade é usada para alinhar as linhas flexíveis.align-content</p>
+    <p class="flexbox">O valor exibe as linhas flexíveis com espaço igual entre elas:space-between</p>
+
+    <p>
+    <details class="detalhes">
+        <summary>
+            <h1 class="titulos">Ac Space-Around</h1>
+        </summary>
+        </p>
+        <div class="conteiner21">
+            <div class="contido">1</div>
+            <div class="contido">2</div>
+            <div class="contido">3</div>
+            <div class="contido">4</div>
+            <div class="contido">5</div>
+            <div class="contido">6</div>
+
+
+
+
+        </div>
+
+        <pre class="codigo"> <code class="codigo"><span class="codtitle">#Style.css</span>         
+    <span class="codsubtitle">.conteiner{</span>
+        <span class="codtext">height:200px ;</span>
+        <span class="codtext">width: 700px;</span>
+        <span class="codtext">background-color: rgb(187, 187, 187);</span>
+        <span class="codtext">border: 1px solid #000000;</span>
+        <span class="codtext">display: flex;</span>
+        <span class="codtext">flex-wrap: wrap</span>
+        <span class="codtext">align-content: space-around</span>
+        <span class="codsubtitle">}</span>
+    </code></pre>
+    </details>
+
+    <p class="flexbox">O valor exibe as linhas flexíveis com espaço antes, entre e depois deles:space-around</p>
+
+    <p>
+    <details class="detalhes">
+        <summary>
+            <h1 class="titulos">Ac Stretch</h1>
+        </summary>
+        </p>
+        <div class="conteiner22">
+            <div class="contido">1</div>
+            <div class="contido">2</div>
+            <div class="contido">3</div>
+            <div class="contido">4</div>
+            <div class="contido">5</div>
+            <div class="contido">6</div>
+
+
+
+
+        </div>
+
+        <pre class="codigo"> <code class="codigo"><span class="codtitle">#Style.css</span>         
+    <span class="codsubtitle">.conteiner{</span>
+        <span class="codtext">height:200px ;</span>
+        <span class="codtext">width: 700px;</span>
+        <span class="codtext">background-color: rgb(187, 187, 187);</span>
+        <span class="codtext">border: 1px solid #000000;</span>
+        <span class="codtext">display: flex;</span>
+        <span class="codtext">flex-wrap: wrap</span>
+        <span class="codtext">align-content: stretch</span>
+        <span class="codsubtitle">}</span>
+    </code></pre>
+    </details>
+
+    <p class="flexbox">O valor estica as linhas flexíveis para ocupar o restante espaço (isso é padrão):stretch</p>
+
+    <p>
+    <details class="detalhes">
+        <summary>
+            <h1 class="titulos">Ac Center</h1>
+        </summary>
+        </p>
+        <div class="conteiner23">
+            <div class="contido">1</div>
+            <div class="contido">2</div>
+            <div class="contido">3</div>
+            <div class="contido">4</div>
+            <div class="contido">5</div>
+            <div class="contido">6</div>
+
+
+
+
+        </div>
+
+        <pre class="codigo"> <code class="codigo"><span class="codtitle">#Style.css</span>         
+    <span class="codsubtitle">.conteiner{</span>
+        <span class="codtext">height:200px ;</span>
+        <span class="codtext">width: 700px;</span>
+        <span class="codtext">background-color: rgb(187, 187, 187);</span>
+        <span class="codtext">border: 1px solid #000000;</span>
+        <span class="codtext">display: flex;</span>
+        <span class="codtext">flex-wrap: wrap</span>
+        <span class="codtext">align-content: center</span>
+        <span class="codsubtitle">}</span>
+    </code></pre>
+    </details>
+
+    <p class="flexbox">O valor exibe as linhas flexíveis no meio do contêiner:center</p>
+
+    <p>
+    <details class="detalhes">
+        <summary>
+            <h1 class="titulos">Ac Flex-Start</h1>
+        </summary>
+        </p>
+        <div class="conteiner24">
+            <div class="contido">1</div>
+            <div class="contido">2</div>
+            <div class="contido">3</div>
+            <div class="contido">4</div>
+            <div class="contido">5</div>
+            <div class="contido">6</div>
+
+
+
+
+        </div>
+
+        <pre class="codigo"> <code class="codigo"><span class="codtitle">#Style.css</span>         
+    <span class="codsubtitle">.conteiner{</span>
+        <span class="codtext" >height:200px ;</span>
+        <span class="codtext">width: 700px;</span>
+        <span class="codtext">background-color: rgb(187, 187, 187);</span>
+        <span class="codtext">border: 1px solid #000000;</span>
+        <span class="codtext"> display: flex;</span>
+        <span class="codtext">flex-wrap: wrap</span>
+        <span class="codtext">align-content: flex-start</span>
+        <span class="codsubtitle">}</span>
+    </code></pre>
+    </details>
+
+    <p class="flexbox">O valor exibe as linhas flexíveis no início do contêiner:flex-start</p>
+
+    <p>
+    <details class="detalhes">
+        <summary>
+            <h1 class="titulos">Ac Flex-End</h1>
+        </summary>
+        </p>
+        <div class="conteiner25">
+            <div class="contido">1</div>
+            <div class="contido">2</div>
+            <div class="contido">3</div>
+            <div class="contido">4</div>
+            <div class="contido">5</div>
+            <div class="contido">6</div>
+
+
+
+
+        </div>
+
+        <pre class="codigo"> <code class="codigo"><span class="codtitle">#Style.css</span>         
+    <span class="codsubtitle">.conteiner{</span>
+        <span class="codtext">height:200px ;</span>
+        <span class="codtext">width: 700px;</span>
+        <span class="codtext">background-color: rgb(187, 187, 187);</span>
+        <span class="codtext">border: 1px solid #000000;</span>
+        <span class="codtext">display: flex;</span>
+        <span class="codtext">flex-wrap: wrap</span>
+        <span class="codtext">align-content: flex-end</span>
+        <span class="codsubtitle">}</span>
+    </code></pre>
+    </details>
+
+    <p class="flexbox">O valor exibe as linhas flexíveis no final do contêiner: flex-end</p>
+
+    <p>
+    <details class="detalhes">
+        <summary>
+            <h1 id="Centro-Perfeito" class="titulos">Centro Perfeito</h1>
+        </summary>
+        </p>
+        <div class="conteiner26">
+            <div class="contido">1</div>
+        </div>
+
+        <pre class="codigo"> <code class="codigo"><span class="codtitle">#Style.css</span>         
+    <span class="codsubtitle">.conteiner{</span>
+        <span class="codtext">height:200px ;</span>
+        <span class="codtext">width: 700px;</span>
+        <span class="codtext">background-color: rgb(187, 187, 187);</span>
+        <span class="codtext">border: 1px solid #000000;</span>
+        <span class="codtext">display: flex;</span>
+        <span class="codtext">  justify-content: center;</span>
+        <span  class="codtext">align-items: center;</span>
+        <span class="codsubtitle">}</span>
+    </code></pre>
+    </details>
+
+    <p class="flexbox">No exemplo a seguir vamos resolver um problema de estilo muito comum: perfeito Centralização.</p>
+    <p class="ultimo">SOLUÇÃO: Defina as propriedades e como , e o item flex será perfeitamente
+        centralizado:justify-contentalign-itemscenter</p>
+
+</body>
+
+<footer id="contato">
+    <div class="footer-content">
+        <a href="https://instagram.com/gabriiell.andre_?igshid=OGQ5ZDc2ODk2ZA==">
+            <figure>
+                <img class="post-capa" width="80" height="80"
+                    src="https://pngimg.com/uploads/instagram/instagram_PNG10.png" alt="Instagram">
+            </figure>
+        </a>
+        <a href="https://wa.me/qr/WU7JAJIFR7T3L1">
+            <figure>
+                <img class="post-capa" width="95" height="95"
+                    src="https://pngimg.com/uploads/whatsapp/whatsapp_PNG95145.png" alt="WhatsApp">
+            </figure>
+        </a>
+        <a href="https://github.com/gabrielandresoliveira">
+            <figure>
+                <img class="post-capa" width="95" height="95"
+                    src="https://th.bing.com/th/id/R.1873d04ef913dd3a8269dcef5af09916?rik=MPcZP37xkHHZYQ&riu=http%3a%2f%2fpngimg.com%2fuploads%2fgithub%2fgithub_PNG20.png&ehk=erTZufioxFZ3FWvitC7ljHIHQyUoiEj1kvH6U4KKpfU%3d&risl=&pid=ImgRaw&r=0" alt="GitHub">
+            </figure>
+        </a>
+    </div>
+</footer>
+<p class="dev">&copy; Developer: G. André</p>
